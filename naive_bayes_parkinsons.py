@@ -1,5 +1,3 @@
-from gmpycommon.gmutils import dprint as print
-
 import pandas as pd
 
 # Feature columns we use
@@ -51,8 +49,3 @@ print('Accuracy score on test data:', accuracy_train)
 # predict_unknown = gnb.predict([[150,160,70,0,0,0,0,0]])
 predict_unknown = gnb.predict([[240,250,230,0,0,0,0,0]])
 print('Prediction on unknown data:', predict_unknown) 
-
-
-# print(gnb.classes_)
-# print(gnb.class_prior_)
-# print(gnb._joint_log_likelihood([[00]]))
